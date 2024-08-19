@@ -42,7 +42,7 @@ hr {
 
 @media (max-width : 800px) {
   .package {
-    height: 100vh;
+    height: 80vh;
   }
 
   .intro {
