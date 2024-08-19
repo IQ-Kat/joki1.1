@@ -1,0 +1,280 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #F4f4f4;
+  margin: 0;
+  padding: 20px;
+  /* Added padding for spacing */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  color: #002C53;
+
+}
+
+.intro {
+  text-align: center;
+  /* Centered text */
+  margin-bottom: 20px;
+  /* Space below the introduction */
+  /* Font size for the introduction */
+}
+
+.packages {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+hr {
+
+  border: solid #03638B 0.5px;
+
+
+}
+
+@media (max-width : 800px) {
+  .package {
+    height: 100vh;
+  }
+
+  .intro {
+    font-size: 18px;
+  }
+
+  .paket:before {
+    font-size: 1.17em;
+  }
+ .arrow {
+   font-size: 24px;
+ }
+}
+
+@media (min-width : 801px) {
+  .package {
+    height: 600px;
+  }
+
+  .intro {
+    font-size: 24px;
+  }
+
+  .paket:before {
+    font-size: 1.5em;
+  }
+ .arrow {
+   font-size: 50px;
+ }
+}
+
+.package {
+  position: relative;
+  color: #002C53;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 65px 20px 20px 20px;
+  background-color: rgba(233, 248, 253, 0.1);
+  border: 1px solid #00E8FF;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.paket:before {
+  content: "";
+  background: rgba(0, 232, 255, 0.5);
+  width: 90%;
+  /* Full width of the parent */
+  height: 70px;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  /* Use absolute positioning */
+  top: 10px;
+  /* Align at the top */
+  left: 50%;
+  /* Move to the center */
+  transform: translateX(-50%);
+  /* Center horizontally */
+  font-weight: bold;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: #002C53;
+  box-sizing: border-box;
+  padding: 10px;
+  /* Ensure text is not touching the edges */
+}
+
+.paket1:before {
+  content: "⚡ Paket Super Flash Sale ⚡";
+}
+
+.paket2:before {
+  content: "❖ Paket Reguler ❖";
+}
+
+.paket3:before {
+  content: "❖ Paket Plus ❖";
+}
+
+.paket4:before {
+  content: "❖ Paket Premium ❖";
+}
+
+.paket5:before {
+  content: "❖ Paket Develop & Learn ❖"
+}
+
+h3 {
+  color: #002C53;
+}
+
+h4 {
+  text-align: center;
+}
+
+.harga {
+  text-align: center;
+}
+
+.penting {
+  font-size: 25px;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: #007BFF;
+}
+
+.example-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(45deg, blue, cyan);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black w/ opacity */
+  padding-top: 60px;
+  /* Place the modal content */
+}
+
+.modal-content {
+  background: #F2FCFF;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 5px solid #00E8FF;
+  border-radius: 10px;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+
+}
+
+th,
+td {
+  border: 1px solid #00ACD4;
+  padding: 8px;
+  text-align: left;
+  background-color: white;
+}
+
+td {
+  border-radius: 100px;
+}
+
+th {
+  background: linear-gradient(cyan, white);
+}
+
+.note {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.close {
+  color: #0087FF;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: cyan;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-image: url(centang.svg);
+}
+
+.wh{
+  text-decoration:none;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(90deg, #00FAF2, #002BFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wh:hover,.wh:active,.wh:focus{
+  font-size:18px;
+  text-decoration:none;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(180deg, #00FAF2, #002BFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
